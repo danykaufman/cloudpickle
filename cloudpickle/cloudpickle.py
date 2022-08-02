@@ -80,7 +80,7 @@ else:
 # cloudpickle is meant for inter process communication: we expect all
 # communicating processes to run the same Python version hence we favor
 # communication speed over compatibility:
-DEFAULT_PROTOCOL = pickle.HIGHEST_PROTOCOL
+DEFAULT_PROTOCOL = 4
 
 # Names of modules whose resources should be treated as dynamic.
 _PICKLE_BY_VALUE_MODULES = set()
